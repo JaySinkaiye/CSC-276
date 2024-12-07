@@ -22,6 +22,8 @@ public class WelcomeFrame {
         WestButton1.setIcon(new ImageIcon("UM.png"));
         WestButton2.setIcon(new ImageIcon("MSU.png"));
 
+        WestButton1.setRolloverIcon(new ImageIcon("OSU.png"));
+
         westPanel.add(WestButton1);
         westPanel.add(WestButton2);
 
@@ -49,14 +51,6 @@ public class WelcomeFrame {
         frame.setSize(400, 300);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
-
-        File imageCheck = new File("UM.png");
-
-        if(imageCheck.exists()) 
-            System.out.println("Image file found!");
-        else 
-            System.out.println("Image file not found!");
-
     }
 
 }
